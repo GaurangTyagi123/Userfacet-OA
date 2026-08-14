@@ -5,6 +5,10 @@ Backend implementation for the Userfacet Online Assessment, built with **Node.js
 The application provides APIs for user authentication, book management, borrowing operations, filtering, and AI-powered functionality.
 
 ---
+# API Overview
+
+api documentation is available at [api-docs](https://documenter.getpostman.com/view/47791845/2sBYApyCxd)
+
 
 ## Features
 
@@ -450,9 +454,6 @@ dist/server.js
 
 ---
 
-# API Overview
-
-api documentation is available at [api-docs](https://documenter.getpostman.com/view/47791845/2sBYApyCxd)
 
 # Error Handling
 
