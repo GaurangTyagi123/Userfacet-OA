@@ -85,7 +85,6 @@ Generated Summary
 Book stored/returned with AI-generated description
 ```
 
-
 The AI API is called from the backend so that API credentials and external-service configuration are not exposed to clients.
 
 ## Semantic Vector Search
@@ -139,8 +138,6 @@ to find relevant books even when the exact words in the query do not appear in t
 * Works well with AI-generated book descriptions
 * Can be combined with traditional filtering and search
 * Provides a foundation for future recommendation functionality
-
-
 
 # Tech Stack
 
@@ -393,7 +390,7 @@ JWT_ACCESS_EXPIRE_TIME = 1d
 JWT_REFRESH_EXPIRE_TIME = 7d
 COOKIE_EXPIRE_TIME = 2
 RESEND_KEY = "<resend-api-key>"
-RESET_URL = "https://userfacet-oa.onrender.com:3000"
+RESET_URL = "https://userfacet-oa.onrender.com"
 AI_API_URL = "<api_url>"
 AI_API_TOKEN = "<api-token>"
 ```

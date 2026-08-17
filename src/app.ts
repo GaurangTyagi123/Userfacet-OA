@@ -37,22 +37,20 @@ app.use(
         contentSecurityPolicy: {
             directives: {
                 defaultSrc: ["'self'"],
-                styleSrc: ["'self'", "'unsafe-inline'"],
-                workerSrc: ["'self'", "blob:"],
-                childSrc: ["'self'", "blob:"],
-                scriptSrc: ["'self'", "'unsafe-inline'"],
-
-                imgSrc: ["'self'", "data:", "https:"],
-                connectSrc: ["'self'"],
-                manifestSrc: ["'self'"],
-                frameSrc: ["'none'"],
-                objectSrc: ["'none'"],
-                mediaSrc: ["'self'"],
-                fontSrc: ["'self'", "https:", "data:"],
             },
         },
     }),
 );
+app.get("/", (req: AppRequest, res: AppResponse) => {
+    return res.status(200).json({
+        status: "success",
+        data: {
+            message:
+                "This is an e-library management api, documentation can be found at https://documenter.getpostman.com/view/47791845/2sBYApyCxd",
+        },
+    });
+})
+
 app.use("/api/v1/auth", authRouter);
 app.use("/api/v1/user", userRouter);
 app.use("/api/v1/book", bookRouter);
