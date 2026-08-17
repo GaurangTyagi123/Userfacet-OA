@@ -404,6 +404,9 @@ The exact environment variable names should match the variables used by the appl
 ## Development
 
 Run the TypeScript server in development mode:
+```bash
+npm run dev
+```
 
 ## Build
 
